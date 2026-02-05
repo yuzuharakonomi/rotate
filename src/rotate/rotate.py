@@ -2,7 +2,7 @@ import string
 
 
 def rotate(text: str, rotation: int) -> str:
-    if not text.isalpha() and not text.isascii():
+    if not text.isalpha() or not text.isascii():
         raise ValueError()
 
     total_alphabets = len(string.ascii_lowercase)
