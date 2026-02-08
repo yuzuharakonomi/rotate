@@ -13,6 +13,10 @@ dependencies = [
 [pytest]
 addopts = ["--import-mode=importlib"]
 
+[tool.pyright]
+venvPath = "."
+venv = ".venv"
+
 [tool.pytest.ini_options]
 pythonpath = "src"
 testpaths = ["tests",]
