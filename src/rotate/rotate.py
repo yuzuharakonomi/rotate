@@ -2,9 +2,6 @@ import string
 
 
 def rotate(text: str, rotation: int) -> str:
-    if not text.isalpha() or not text.isascii():
-        raise ValueError()
-
     normalized_rotation = rotation % 26
     translation_table = str.maketrans(
         string.ascii_lowercase + string.ascii_uppercase,

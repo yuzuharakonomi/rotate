@@ -16,7 +16,3 @@ class TestRotate:
 
     def test_rotate_minus_27(self):
         assert rotate("Hello", -27) == "Gdkkn"
-
-    def test_non_alphabetical_text(self):
-        with pytest.raises(ValueError):
-            rotate("?", 1)
